@@ -1,14 +1,16 @@
 import styled from 'styled-components'
+import { contentWidth } from '../../../constants'
 
 export const Container = styled.div`
   display: flex;
   justify-content: center;
+  width: 100%;
+  max-height: 46px;
 `
 
 export const ContentWrapper = styled.div`
   width: 100%;
-  max-width: 1410px;
-  max-height: 46px;
+  max-width: ${contentWidth}px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,7 +23,7 @@ export const ImageWrapper = styled.div`
 export const InfoBlocks = styled.div`
   width: 30%;
   max-height: 46px;
-  font-size: 20px;
+  font-size: 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -31,7 +33,6 @@ export const InfoBlocks = styled.div`
 export const Block = styled.div`
   display: flex;
   align-items: center;
-  align-text: center;
 `
 
 export const BlockText = styled.span`
@@ -39,7 +40,7 @@ export const BlockText = styled.span`
 `
 
 export const Image = styled.span`
-  width: 40px;
+  width: 30px;
   height: 25px;
   background-repeat: no-repeat;
   background-size: 85% auto;

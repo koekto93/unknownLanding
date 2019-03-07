@@ -10,6 +10,8 @@
     "lodash": "^4.17.11",
     "react": "next",
     "react-dom": "next",
+    "react-grid-gallery": "^0.5.3",
+    "react-photo-gallery": "^6.3.2",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.4",

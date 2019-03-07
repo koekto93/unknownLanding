@@ -38,9 +38,19 @@
   box-sizing: border-box; 
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+html,
+body, #root {
+  height: 100%;
+}
+
+body {
+/*   margin: 0;
+  padding: 0; */
   font-family: PFEncoreSansPro-Light, 'Segoe UI Light';
   font-style: normal;
   font-stretch: normal;
@@ -51,11 +61,11 @@ body {
   min-width: 1440px;
   user-select: none;  
 }
-
+/* 
 p { 
   margin: 0;
   padding: 0;
-}
+} */
 
 .simple-button {
   width: 200px;
@@ -75,4 +85,8 @@ p {
 .form-submit {
   display: flex;
   justify-content: flex-end;
+}
+
+.navigation__link_active {
+  color: #000 !important;
 }

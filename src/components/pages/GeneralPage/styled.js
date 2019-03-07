@@ -1,37 +1,35 @@
 import styled from 'styled-components'
+import { contentWidth } from '../../../constants'
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-`
-
-export const MenuBarWrapper = styled.div`
-  margin-bottom: 53px;
-`
-
-export const ContentWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0 42px;
-  margin-bottom: 20px;
-`
-
-export const Content = styled.div``
-
-export const Cards = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
   height: 100%;
 `
 
-export const LeftSideContainer = styled.div`
-  margin-right: 42px;
+export const MenuBarWrapper = styled.div`
+  margin-bottom: 30px;
+  flex: 0 0 auto;
+`
+
+export const Content = styled.div`
+  flex: 1 0 auto; /* Относится к расширению самого блока, а не дочерних элементов */
+  width: 100%;
+  max-width: ${contentWidth}px;
+  display: flex;
+  margin: 0 auto;
+
   & > div:first-child {
-    margin-bottom: 42px;
+    margin-right: 30px;
   }
+
+  & > div:last-child {
+    flex: 1 0 auto;
+  }
+`
+
+export const FooterWrapper = styled.div`
+  flex: 0 0 auto;
+  margin-top: 30px;
 `
